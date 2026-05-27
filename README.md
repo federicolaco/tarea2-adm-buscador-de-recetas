@@ -35,13 +35,13 @@ UI (Compose) → ViewModels → RecipeRepository → MealApiService (Retrofit)
 
 ## Navegación (5 rutas)
 
-| Ruta                                 | Parámetros                       |
-| ------------------------------------ | -------------------------------- |
-| `home`                               | —                                |
+| Ruta                                 | Parámetros                 |
+| ------------------------------------ | -------------------------- |
+| `home`                               | —                          |
 | `results/{filterType}/{filterValue}` | NAME, CATEGORY, INGREDIENT |
-| `detail/{mealId}`                    | id de receta                     |
-| `favorites`                          | —                                |
-| `categories`                         | —                                |
+| `detail/{mealId}`                    | id de receta               |
+| `favorites`                          | —                          |
+| `categories`                         | —                          |
 
 ## Compilar y ejecutar
 
@@ -87,13 +87,6 @@ Informe en `docs/security/detekt-report.html`. Guía: [docs/security/README.md](
 | Informe SAST (Detekt)            | `docs/security/`     |
 | PPT (≤ 5 slides) y video 30–60 s | `docs/presentacion/` |
 | Este README                      | raíz del repo        |
-
-**Enlaces de entrega** (completar antes de subir):
-
-- Repositorio GitHub: `https://github.com/...`
-- Mockups: `docs/mockups/` o enlace Figma
-- Video demo: `docs/presentacion/demo.mp4` o URL
-- Informes: `docs/security/`
 
 ## Manual de usuario
 
