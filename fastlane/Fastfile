@@ -1,0 +1,29 @@
+default_platform(:android)
+
+def project_gradle_path
+  root = File.expand_path("..", __dir__)
+  bat = File.join(root, "gradlew.bat")
+  sh = File.join(root, "gradlew")
+  return bat if File.exist?(bat)
+  return sh if File.exist?(sh)
+
+  UI.user_error!("No se encontró gradlew en #{root}")
+end
+
+platform :android do
+  desc "Compila APK debug"
+  lane :build do
+    gradle(task: "assembleDebug", gradle_path: project_gradle_path)
+  end
+
+  desc "Ejecuta tests unitarios"
+  lane :test do
+    gradle(task: "testDebugUnitTest", gradle_path: project_gradle_path)
+  end
+
+  desc "Build debug listo para demo (Tarea 2 ADM)"
+  lane :beta do
+    gradle(task: "clean assembleDebug", gradle_path: project_gradle_path)
+    UI.message("APK en app/build/outputs/apk/debug/app-debug.apk")
+  end
+end

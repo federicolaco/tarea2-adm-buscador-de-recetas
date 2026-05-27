@@ -1,0 +1,18 @@
+*.iml
+.gradle/
+/local.properties
+/.idea/
+.DS_Store
+/build/
+app/build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.ap_
+*.aab
+output/
+
+# Entregables grandes (subir por link si aplica)
+docs/presentacion/*.mp4
+docs/presentacion/*.mov

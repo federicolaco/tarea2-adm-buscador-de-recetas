@@ -1,0 +1,37 @@
+build:
+  maxIssues: -1
+
+config:
+  validation: true
+
+processors:
+  active: true
+
+console-reports:
+  active: true
+
+output-reports:
+  active: true
+
+comments:
+  active: false
+
+complexity:
+  active: true
+
+empty-blocks:
+  active: true
+
+naming:
+  active: true
+  FunctionNaming:
+    active: false
+
+performance:
+  active: true
+
+potential-bugs:
+  active: true
+
+style:
+  active: true
